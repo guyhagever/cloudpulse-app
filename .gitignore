@@ -1,0 +1,18 @@
+# Binaries and compiled output
+bin/
+dist/
+*.exe
+*.test
+*.out
+
+# OS / Editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Secrets / Local configs
+*.env
+*.pem
+*.key
+kubeconfig
