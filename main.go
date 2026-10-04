@@ -89,7 +89,7 @@ func main() {
 		hostname, _ := os.Hostname()
 		w.Header().Set("Content-Type", "application/json")
 		w.WriteHeader(http.StatusOK)
-		fmt.Fprintf(w, `{"app":"CloudPulse","version":"1.0.0","hostname":"%s","time":"%s"}`, hostname, time.Now().UTC().Format(time.RFC3339))
+		fmt.Fprintf(w, `{"app":"CloudPulse","version":"2.0.0","hostname":"%s","time":"%s"}`, hostname, time.Now().UTC().Format(time.RFC3339))
 	})
 
 	// CPU Load simulation to trigger HPA scaling
